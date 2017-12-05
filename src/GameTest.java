@@ -7,7 +7,7 @@
  */
 import java.util.Scanner;
 
-public class GameTester {
+public class GameTest {
 
 	public static void main(String[] args) {
 		Scanner keyboard = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class GameTester {
 		Game newGame = new Game(dif);	
 		newGame.play();
 		
-		
+		keyboard.close();
 
 	}
 

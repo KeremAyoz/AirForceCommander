@@ -29,7 +29,7 @@ public class Game implements Difficulty {
 		gamer = new Player();
 		score = 0;
 		passedElements = 0;
-		hostile = new ArrayList();
+		hostile = new ArrayList<EnemyVehicle>();
 		for (int i = 0; i < difficulty*2; i++)
 			hostile.add(getNewRandomVehicle());
 	}
@@ -52,6 +52,7 @@ public class Game implements Difficulty {
 			enemiesTurn();
 		}
 		System.out.println("The final score is " + score);
+		in.close();
 	}
 	
 	/*
